@@ -1,0 +1,8 @@
+.resume-page { padding-top: 9rem; padding-bottom: 5rem; }
+.resume-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; margin-top: 2.5rem; }
+.resume-card { padding: 2rem; min-height: 250px; display: flex; flex-direction: column; }
+.resume-icon { width: 3.2rem; height: 3.2rem; display: grid; place-items: center; border-radius: 14px; background: rgba(255,255,255,.06); font-size: 1.5rem; margin-bottom: 1.25rem; }
+.resume-card h2 { margin: 0 0 .7rem; font-size: 1.35rem; }
+.resume-card p { color: var(--muted, #9ba3b4); line-height: 1.7; margin: 0 0 1.5rem; max-width: 34rem; }
+.resume-actions { display: flex; gap: .75rem; margin-top: auto; flex-wrap: wrap; }
+@media (max-width: 760px) { .resume-grid { grid-template-columns: 1fr; } .resume-page { padding-top: 7rem; } }

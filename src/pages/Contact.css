@@ -1,0 +1,18 @@
+.contact-page { padding-top: 9rem; padding-bottom: 5rem; }
+.contact-card { padding: clamp(1.4rem, 4vw, 3rem); }
+.contact-layout { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr); gap: 2rem; margin-top: 2.5rem; }
+.contact-form { display: grid; gap: 1rem; }
+.contact-form label { display: grid; gap: .45rem; font-size: .82rem; color: #aeb5c4; font-weight: 600; }
+.contact-form input, .contact-form textarea { width: 100%; box-sizing: border-box; border: 1px solid rgba(255,255,255,.1); background: rgba(255,255,255,.035); color: #f5f7fb; border-radius: 12px; padding: .9rem 1rem; font: inherit; outline: none; resize: vertical; }
+.contact-form input:focus, .contact-form textarea:focus { border-color: rgba(112, 214, 255, .55); box-shadow: 0 0 0 3px rgba(112, 214, 255, .08); }
+.contact-form input::placeholder, .contact-form textarea::placeholder { color: #687184; }
+.contact-submit { border: 0; cursor: pointer; justify-self: start; }
+.contact-details { display: grid; gap: .8rem; align-content: start; }
+.contact-item { display: grid; grid-template-columns: 42px 1fr auto; align-items: center; gap: .85rem; padding: 1rem; border: 1px solid rgba(255,255,255,.08); border-radius: 14px; background: rgba(255,255,255,.025); color: inherit; text-decoration: none; transition: transform .2s ease, border-color .2s ease, background .2s ease; }
+.contact-item:hover { transform: translateY(-2px); border-color: rgba(112,214,255,.35); background: rgba(255,255,255,.045); }
+.contact-item small { display: block; color: #737c8e; margin-bottom: .25rem; }
+.contact-item strong { display: block; font-size: .92rem; overflow-wrap: anywhere; }
+.contact-item b { color: #7bdcff; }
+.contact-icon { width: 42px; height: 42px; border-radius: 12px; display: grid; place-items: center; background: rgba(123,220,255,.08); color: #7bdcff; font-weight: 800; font-size: .8rem; }
+.contact-footer-note { margin-top: 1.4rem; color: #697286; font-size: .78rem; line-height: 1.6; }
+@media (max-width: 820px) { .contact-layout { grid-template-columns: 1fr; } .contact-page { padding-top: 7rem; } }
